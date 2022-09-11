@@ -1,0 +1,188 @@
+body{
+  margin: 0;
+  font-family: Arial,  sans-serif;
+  font-size: 0.9em;
+  
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+ul>a,#header-img{
+  padding: 0 8px;
+}
+
+
+#header-img:hover{
+  box-shadow: 0 0 10px  gainsboro;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+h1,img{
+  
+  font-weight: bolder;
+  font-size: 50px;
+  
+}
+
+.my-input-container{
+  display: flex;
+  justify-content:space-between ;
+  width: 350px;
+  height: 38px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+
+}
+
+.my-input-container:hover{
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.my-input-container>input {
+   flex-grow:1;
+   border:none ;
+   outline: none;
+  
+}
+#text{
+  margin: 10px 8px 0 8px;
+  
+}
+
+#text:hover{
+  cursor: pointer;
+}
+
+
+a{
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+a:hover{
+  text-decoration: underline;
+}
+
+.my-button-container
+{
+  padding-top: 30px;
+}
+
+button{
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: none;
+  height: 36px;
+  padding: 0 20px;
+  margin: 0 4px;
+}
+
+button:hover
+{
+  cursor: pointer;
+  box-shadow:0 0 10px 0 gainsboro ;
+}
+
+footer{
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+#footer-left
+{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+}
+
+#footer-right
+{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  align-items: center;
+
+}
+
+@media(max-width:630px)
+{
+  footer.nav{
+    flex-direction: column;
+  }
+
+  #footer-left
+  {
+   justify-content: center;
+  }
+
+  #footer-right
+  {
+      justify-content: center;
+  }
+
+
+.my-input-container{
+  width: 95vw;
+}
+
+}
+
+@media(max-height:522px)
+{
+  body{
+    overflow: hidden;
+  }
+
+  section{
+    margin-bottom: 20px;
+  }
+
+  footer
+  {
+   position: fixed;
+   bottom: 0;
+  }
+}
+
+@media(max-height:570px) and (max-width:630px)
+{
+  body{
+    overflow-x: hidden;
+  }
+
+  section{
+
+    margin-bottom: 13px;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+  }
+}
